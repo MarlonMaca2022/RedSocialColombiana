@@ -1,0 +1,11 @@
+/* CSS reset for w3.css compatibility */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
