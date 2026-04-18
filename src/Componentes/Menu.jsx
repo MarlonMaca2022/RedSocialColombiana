@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ChatPage from "../pages/ChatPage";
 import ConfiguracionPage from "../pages/ConfiguracionPage";
 import GruposPage from "../pages/GruposPage";
@@ -36,7 +36,7 @@ export default function Menu() {
                             <Link to="#" className="w3-bar-item w3-button">Jane likes your post</Link>
                         </div>
                     </div>
-                    <Link to="#" className="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+                    <Link to="/configuracion" className="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
                         <img src="https://www.w3schools.com//w3images/avatar2.png" className="w3-circle" style={{ height: "23px", width: "23px" }} alt="Avatar" />
                     </Link>
                 </div>
