@@ -10,10 +10,10 @@ import Eventos from "../Componentes/Eventos"
 import Request from "../Componentes/Request"
 import Adds from "../Componentes/Adds"
 
-export default function PlantillaRedSocialPage() {
+export default function PlantillaRedSocialPage({ onLogoutSuccess }) {
     return (
         <div>
-            <Menu />
+            <Menu onLogoutSuccess={onLogoutSuccess} />
 
             {/* Page Container */}
             <div className="w3-container w3-content" style={{ maxWidth: "1400px", marginTop: "80px" }}>

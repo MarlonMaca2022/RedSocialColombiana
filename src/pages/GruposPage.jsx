@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Menu from "../Componentes/Menu";
 
-export default function GruposPage() {
+export default function GruposPage({ onLogoutSuccess }) {
     const [myGroups, setMyGroups] = useState([
         {
             id: 1,
@@ -62,7 +62,7 @@ export default function GruposPage() {
 
     return (
         <div className="w3-theme-l5" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-            <Menu />
+            <Menu onLogoutSuccess={onLogoutSuccess} />
 
             <div className="w3-container w3-content fade-in" style={{ maxWidth: "1200px", marginTop: "80px", flex: 1 }}>
                 <div className="w3-row-padding">

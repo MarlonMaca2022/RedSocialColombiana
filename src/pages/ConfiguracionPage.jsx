@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Menu from "../Componentes/Menu";
 
-export default function ConfiguracionPage() {
+export default function ConfiguracionPage({ onLogoutSuccess }) {
     const [activeTab, setActiveTab] = useState('General');
 
     const handleSave = (section) => {
@@ -10,7 +10,7 @@ export default function ConfiguracionPage() {
 
     return (
         <div className="w3-theme-l5" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-            <Menu />
+            <Menu onLogoutSuccess={onLogoutSuccess} />
 
             {/* Contenido */}
             <div className="w3-container w3-content fade-in" style={{ maxWidth: "1000px", marginTop: "80px", flex: 1 }}>
